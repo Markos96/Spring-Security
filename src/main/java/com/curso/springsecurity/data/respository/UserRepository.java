@@ -1,4 +1,12 @@
 package com.curso.springsecurity.data.respository;
 
-public interface UserRepository {
+import com.curso.springsecurity.data.entity.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
+
+@Repository
+public interface UserRepository extends JpaRepository<User, Long> {
+    public Optional<User> findByUsername(String username);
 }

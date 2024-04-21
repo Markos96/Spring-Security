@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: spring-security
+
+server:
+  port: 8085
+
+compiler:
+  document:
+    save:
+      enabled
+
+
+security:
+  jwt:
+    expiration-minutes: 30
+    secret-key: bXkgcGVyc29uIHRlc3Qga2V5IG9mIDIwMjQgYW5kIHNlY3VyaXR5IGNvdXJzZQ==
